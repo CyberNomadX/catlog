@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 ## Planned Usage
 ```
-python main.py
+python catlog.py
 ```
 
 ---
@@ -74,7 +74,7 @@ catlog/
 │   ├── linux.py
 │   ├── windows.py
 │   └── web.py
-├── main.py
+├── catlog.py
 └── README.md
 ```
 
