@@ -1,5 +1,6 @@
 import platform
 import os
+from parsers.windows import analyze_windows_logs
 
 def print_banner():
     print("==========================================================")
@@ -11,6 +12,7 @@ def print_banner():
     print(".##....##.##.....##....##....##.......##.....##.##....##..")
     print("..######..##.....##....##....########..#######...######...")
     print("==========================================================")
+
 
 # Function to check the approporiate operating system
 def get_system_info():
@@ -28,7 +30,7 @@ def get_system_info():
     # Add Linux-specific log retrieval code here
     elif os_name == "Windows":
         print(f"Detected OS: {os_name}")
-        print(f"Windows logs will go here later...")
+        analyze_windows_logs()
     else:
         print(f"Operating system not supported: {os_name}")
         print("This script currently only supports Linux and Windows.")
