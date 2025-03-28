@@ -55,3 +55,52 @@ This project is under active development. Here’s what I plan to include:
 git clone https://github.com/yourusername/catlog.git
 cd catlog
 pip install -r requirements.txt
+```
+---
+
+## Planned Usage
+```
+python main.py
+
+```
+
+---
+
+## 📁 Planned Structure
+```
+catlog/
+├── core/
+│   └── utils.py
+├── parsers/
+│   ├── linux.py
+│   ├── windows.py
+│   └── web.py
+├── main.py
+└── README.md
+```
+
+---
+
+📌 Roadmap
+- [ ] Build basic CLI structure
+
+- [ ] Add Linux log parser
+
+- [ ] Add Windows log parser
+
+- [ ] Add web server log parser
+
+- [ ] Create alerting/reporting system
+
+---
+
+🐾 License
+MIT License. Use freely and contribute!
+
+---
+
+❤️ Credits
+ASCII art found and adapted from community ASCII resources.
+
+
+
