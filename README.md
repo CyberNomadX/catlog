@@ -61,7 +61,6 @@ pip install -r requirements.txt
 ## Planned Usage
 ```
 python main.py
-
 ```
 
 ---
