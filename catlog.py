@@ -1,6 +1,5 @@
 import platform
 import os
-from parsers.windows import analyze_windows_logs
 
 def print_banner():
     print("==========================================================")
@@ -20,16 +19,14 @@ def get_system_info():
 
     if os_name == "Linux":
         print(f"Detected OS: {os_name}")
-        linux_log_paths = "/var/log/auth.log"
-        if os.path.exists(linux_log_paths):
-            print(f"Linux log file found at: {linux_log_paths}")
-        else:
-            print(f"Linux log file not found at: {linux_log_paths}")
+        from parsers.linux import analyze_linux_logs
+        analyze_linux_logs()
         
     # Linux logs like /var/log/auth.log
     # Add Linux-specific log retrieval code here
     elif os_name == "Windows":
         print(f"Detected OS: {os_name}")
+        from parsers.windows import analyze_windows_logs
         analyze_windows_logs()
     else:
         print(f"Operating system not supported: {os_name}")
